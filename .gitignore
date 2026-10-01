@@ -1,0 +1,77 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# SecureSIS .gitignore
+# ─────────────────────────────────────────────────────────────────────────────
+
+# Environment / secrets — NEVER commit
+.env
+.env.*
+!.env.example
+
+# ── DATABASE FILES ────────────────────────────────────────────────────────────
+# The runtime database must not be committed.
+# Use `python app.py` to let the app create a fresh database on first run.
+*.db
+*.sqlite
+*.sqlite3
+database/
+
+# ── BACKUPS ───────────────────────────────────────────────────────────────────
+backups/
+
+# ── LOG FILES ─────────────────────────────────────────────────────────────────
+*.log
+logs/
+
+# ── PYTHON GENERATED ─────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+*.pyo
+
+# ── VIRTUAL ENVIRONMENTS ─────────────────────────────────────────────────────
+venv/
+.venv/
+env/
+ENV/
+.python-version
+
+# ── CERTIFICATES / PRIVATE KEYS ───────────────────────────────────────────────
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+*.csr
+id_rsa
+id_ed25519
+
+# ── OFFICE / REPORT ARTIFACTS ─────────────────────────────────────────────────
+# University report / presentation files generated locally — not source code
+*.docx
+*.pptx
+*.pdf
+SecureSIS_Assignment1_Report.*
+SecureSIS_Presentation.*
+
+# ── OS FILES ──────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── IDE / EDITOR ─────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ── PYTEST / COVERAGE ─────────────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ── BUILD / DIST ──────────────────────────────────────────────────────────────
+dist/
+build/
+*.egg-info/
