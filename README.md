@@ -222,6 +222,12 @@ Copy these values into your `.env` file to reuse them across restarts.
 - Automated and manual local SQLite backups for availability.
 - Basic security headers and CSRF protection.
 
+- [## GitHub Achievement Practice
+This repository is for learning GitHub branches, commits, and pull requests.
+* Practice creating branches.
+* Learn how pull requests work.
+* Understand the GitHub contribution workflow.]
+
 ## Limitations
 - **Academic Prototype**: This is an academic prototype, not a production-ready system.
 - **Database Scalability**: SQLite is not suitable for concurrent production use.
